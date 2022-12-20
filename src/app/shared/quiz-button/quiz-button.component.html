@@ -1,0 +1,29 @@
+<button type="button" class="btn btn-outline-primary" (click)="onAnswer()">
+ <em>  {{label}} </em> <br>
+  <hr>
+  {{date | date}} <br>
+
+  {{date | date  :'shortTime'}} 
+
+ 
+  <hr>
+  <i class="bi bi-thermometer-half">
+
+    {{temperature}} ° C<br>
+
+  </i>
+
+  <i class="bi bi-wind">
+
+    {{vent}} % <br>
+
+  </i>
+
+
+  <i class="bi bi-cloud-drizzle">
+
+    {{pluie}} %
+
+  </i>
+
+</button> 

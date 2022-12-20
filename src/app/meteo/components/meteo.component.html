@@ -1,0 +1,14 @@
+<div class="quizz-container card">
+     <h5 class="title">PREVISION METEO DEMAIN !</h5>
+
+    <div class="question-container">    
+        <div class="row">
+            <ng-container *ngFor="let meteo of meteos">
+                <div class="col">
+                     <app-quiz-button [label]="meteo.nomCommune" [date]="meteo.date" [temperature]="meteo.tempatureSol" [vent]="meteo.vitesseMoyVent" [pluie]="meteo.cumulPluie"></app-quiz-button> 
+                </div>
+            </ng-container>
+        </div>
+    </div> 
+
+</div> 
